@@ -1,5 +1,5 @@
 # cfwblogger
-A simple cloudflare worker script that embeds blogger index and posts into your website.  Simply create a page with the text '#TITLE#' and '#BODY#' in it (you can add whatever styling you want.  Then configure the worker script to run on your page and any of it's subpages.
+A simple cloudflare worker script that embeds blogger index and posts into your website.  Simply create a page with the text '#TITLE#' and '#BODY#' in it.  Then configure the worker script to run on your page and any of it's subpages, using your blog ID from Blogger, and your Blogger API Key.
 
 I have used this on a Google Site, where I wanted non-techies the flexibility of a drag and drop site and the convenience of being able to use a blog tool (Blogger) to create articles.  This gives them the use fairly standard / generic tools that are maintained and well documented.  
 
