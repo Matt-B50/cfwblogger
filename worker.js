@@ -75,6 +75,12 @@ async function handleRequest(req) {
     if(req.url != baseurl && req.url != (baseurl + '/')) {
     // if we're fetching something specific, get it's relative URL
         articlePath = req.url.substring(baseurl.length, req.url.length) 
+        
+        // take care of query string (ignore it if it is there)
+        let queryStr= articlePath.indexOf('?')
+        if (queryStr!= -1) {
+            articlePath= articlePath.substring(0, queryStr)
+        }
 
         if (articlePath.substring(0,labelpath.length)==labelpath) {
             // fetching a label
